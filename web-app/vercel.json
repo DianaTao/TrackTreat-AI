@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "environments": {
+    "production": {
+      "env": {
+        "NEXT_PUBLIC_SUPABASE_URL": "your-supabase-url-here",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY": "your-supabase-anon-key-here",
+        "NEXT_PUBLIC_API_URL": "your-backend-api-url-here"
+      }
+    },
+    "preview": {
+      "env": {
+        "NEXT_PUBLIC_SUPABASE_URL": "your-supabase-url-here",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY": "your-supabase-anon-key-here",
+        "NEXT_PUBLIC_API_URL": "your-backend-api-url-here"
+      }
+    },
+    "development": {
+      "env": {
+        "NEXT_PUBLIC_SUPABASE_URL": "your-supabase-url-here",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY": "your-supabase-anon-key-here",
+        "NEXT_PUBLIC_API_URL": "http://localhost:8000"
+      }
+    }
+  }
+}
